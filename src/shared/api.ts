@@ -1028,6 +1028,17 @@ export const openAiNativeModels = {
 		inputPrice: 75,
 		outputPrice: 150,
 	},
+	"o3-pro": {
+		maxTokens: 100_000,
+		contextWindow: 200_000,
+		supportsImages: true,
+		supportsPromptCache: true,
+		inputPrice: 20.0,
+		outputPrice: 80.0,
+		cacheReadsPrice: 5.0,
+		description:
+			"OpenAI's most advanced reasoning model with enhanced compute for complex problem-solving. Uses reasoning_effort parameter to balance between deep reasoning and latency.",
+	},
 } as const satisfies Record<string, ModelInfo>
 
 // Azure OpenAI
